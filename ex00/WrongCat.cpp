@@ -1,40 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.cpp                                            :+:      :+:    :+:   */
+/*   WrongCat.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hariskon <hariskon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/16 17:32:02 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/16 19:12:36 by hariskon         ###   ########.fr       */
+/*   Created: 2026/09/16 19:06:12 by hariskon          #+#    #+#             */
+/*   Updated: 2026/09/16 19:13:26 by hariskon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
+
+#include "WrongCat.hpp"
 
 //Orthodox canonical format functions
-Dog::Dog():Animal(){
-    std::cout << "Dog default constructor called\n";
-    this->type = "Dog";
+WrongCat::WrongCat():WrongAnimal(){
+    std::cout << "WrongCat default constructor called\n";
+    this->type = "WrongCat";
 }
 
-Dog::Dog(const Dog& other):Animal(other){
-    std::cout << "Dog copy constructor called\n";
+WrongCat::WrongCat(const WrongCat& other):WrongAnimal(other){
+    std::cout << "WrongCat copy constructor called\n";
     *this = other;
 }
 
-Dog& Dog::operator=(const Dog& other){
-    std::cout << "Dog assignment operator called\n";
+WrongCat& WrongCat::operator=(const WrongCat& other){
+    std::cout << "WrongCat assignment operator called\n";
     if (this != &other)
         this->type = other.type;
     return *this;
 }
 
-Dog::~Dog(){
-    std::cout << "Dog Destructor called\n";
+WrongCat::~WrongCat(){
+    std::cout << "WrongCat Destructor called\n";
 }
 
 //Action functions
-void Dog::makeSound(){
+void WrongCat::makeSound(){
     std::cout << "Woof\n";
 }

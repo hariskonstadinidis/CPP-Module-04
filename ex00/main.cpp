@@ -6,13 +6,13 @@
 /*   By: hariskon <hariskon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 15:52:30 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/16 17:34:49 by hariskon         ###   ########.fr       */
+/*   Updated: 2026/09/16 19:11:27 by hariskon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
 #include "Cat.hpp"
 #include "Dog.hpp"
+#include "WrongCat.hpp"
 
 int main()
 {
@@ -26,12 +26,18 @@ int main()
     std::cout << "\n";
     Animal *anim3 = new Dog;
     std::cout << "\n";
+    WrongAnimal *wronganim1 = new WrongCat;
+    std::cout << "\n";
+    
     anim1.makeSound();
     cat1.makeSound();
     anim2->makeSound();
     dog1.makeSound();
     anim3->makeSound();
+    wronganim1->makeSound();
     std::cout << "\n";
+
+    
     delete anim2;
     delete anim3;
     return 1;

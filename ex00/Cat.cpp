@@ -6,7 +6,7 @@
 /*   By: hariskon <hariskon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 16:31:20 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/16 17:37:59 by hariskon         ###   ########.fr       */
+/*   Updated: 2026/09/16 19:12:29 by hariskon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ Cat& Cat::operator=(const Cat& other){
 }
 
 Cat::~Cat(){
-    std::cout << "Cat default constructor called\n";
+    std::cout << "Cat Destructor called\n";
 }
 
 //Action functions
