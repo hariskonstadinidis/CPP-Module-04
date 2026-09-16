@@ -6,7 +6,7 @@
 /*   By: hariskon <hariskon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 15:53:00 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/16 16:28:43 by hariskon         ###   ########.fr       */
+/*   Updated: 2026/09/16 17:41:40 by hariskon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,16 @@ Animal& Animal::operator=(const Animal& other){
 }
 
 Animal::~Animal(){
-    std::cout << "Animal Destructor called\n";
+    std::cout << "Animal Destructor called\n\n";
 }
 
 //Action Functions
 
 void Animal::makeSound(){
     std::cout << "unintelligible sounds\n";
+}
+
+//Getters
+std::string Animal::getType(){
+    return this->type;
 }

@@ -6,7 +6,7 @@
 /*   By: hariskon <hariskon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 15:53:03 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/16 16:34:53 by hariskon         ###   ########.fr       */
+/*   Updated: 2026/09/16 17:44:38 by hariskon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,9 @@ class Animal{
         Animal();
         Animal(const Animal& other);
         Animal& operator=(const Animal& other);
-        ~Animal();
+        virtual ~Animal();
         
         virtual void makeSound();
+        
+        std::string getType();
 };
