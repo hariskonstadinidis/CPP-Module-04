@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hariskon <hariskon@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hkonstan <hkonstan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 19:04:42 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/16 19:08:06 by hariskon         ###   ########.fr       */
+/*   Updated: 2026/09/17 20:29:33 by hkonstan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
+#include <string>
 
 #pragma once
 
@@ -24,7 +25,6 @@ class WrongAnimal{
         WrongAnimal& operator=(const WrongAnimal& other);
         virtual ~WrongAnimal();
         
-        virtual void makeSound();
-        
-        std::string getType();
+        void makeSound() const;
+        std::string getType() const;
 };

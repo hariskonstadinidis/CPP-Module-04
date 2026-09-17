@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hariskon <hariskon@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hkonstan <hkonstan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 15:53:03 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/16 19:05:05 by hariskon         ###   ########.fr       */
+/*   Updated: 2026/09/17 20:28:46 by hkonstan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
+#include <string>
 
 #pragma once
 
@@ -24,7 +25,7 @@ class Animal{
         Animal& operator=(const Animal& other);
         virtual ~Animal();
         
-        virtual void makeSound();
+        virtual void makeSound() const;
         
-        std::string getType();
+        std::string getType() const;
 };

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hariskon <hariskon@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hkonstan <hkonstan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 16:31:20 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/16 19:12:29 by hariskon         ###   ########.fr       */
+/*   Updated: 2026/09/17 19:46:18 by hkonstan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,6 @@ Cat::~Cat(){
 }
 
 //Action functions
-void Cat::makeSound(){
+void Cat::makeSound() const{
     std::cout << "Meow\n";
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongCat.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hariskon <hariskon@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hkonstan <hkonstan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 19:06:12 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/16 19:13:26 by hariskon         ###   ########.fr       */
+/*   Updated: 2026/09/17 20:21:48 by hkonstan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,6 @@ WrongCat::~WrongCat(){
 }
 
 //Action functions
-void WrongCat::makeSound(){
-    std::cout << "Woof\n";
+void WrongCat::makeSound() const{
+    std::cout << "Meow\n";
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hariskon <hariskon@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hkonstan <hkonstan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 17:32:46 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/16 17:32:52 by hariskon         ###   ########.fr       */
+/*   Updated: 2026/09/17 19:45:50 by hkonstan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,5 @@ class Dog:public Animal{
         Dog(const Dog& other);
         Dog& operator=(const Dog& other);
         ~Dog();
-        void makeSound() override;
+        void makeSound() const override;
 };

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimal.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hariskon <hariskon@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hkonstan <hkonstan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 19:04:40 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/16 19:07:26 by hariskon         ###   ########.fr       */
+/*   Updated: 2026/09/17 20:32:24 by hkonstan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,11 @@ WrongAnimal::~WrongAnimal(){
 
 //Action Functions
 
-void WrongAnimal::makeSound(){
+void WrongAnimal::makeSound() const{
     std::cout << "unintelligible sounds\n";
 }
 
 //Getters
-std::string WrongAnimal::getType(){
+std::string WrongAnimal::getType() const{
     return this->type;
 }

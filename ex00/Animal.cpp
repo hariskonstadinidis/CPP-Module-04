@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hariskon <hariskon@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hkonstan <hkonstan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 15:53:00 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/16 19:04:07 by hariskon         ###   ########.fr       */
+/*   Updated: 2026/09/17 20:34:54 by hkonstan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,11 @@ Animal::~Animal(){
 
 //Action Functions
 
-void Animal::makeSound(){
+void Animal::makeSound() const{
     std::cout << "unintelligible sounds\n";
 }
 
 //Getters
-std::string Animal::getType(){
+std::string Animal::getType() const{
     return this->type;
 }
-

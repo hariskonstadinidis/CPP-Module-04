@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hariskon <hariskon@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hkonstan <hkonstan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 17:32:02 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/16 19:12:36 by hariskon         ###   ########.fr       */
+/*   Updated: 2026/09/17 19:46:28 by hkonstan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,6 @@ Dog::~Dog(){
 }
 
 //Action functions
-void Dog::makeSound(){
+void Dog::makeSound() const{
     std::cout << "Woof\n";
 }
