@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hariskon <hariskon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/16 17:32:46 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/22 15:04:05 by hariskon         ###   ########.fr       */
+/*   Created: 2026/09/22 13:14:01 by hariskon          #+#    #+#             */
+/*   Updated: 2026/09/22 15:34:54 by hariskon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include <string>
 
-#pragma once
-
-class Dog:public Animal{
+class Brain{
     private:
-        Brain *brain;
-
+        std::string ideas[100];
+    
     public:
-        Dog();
-        Dog(const Dog& other);
-        Dog& operator=(const Dog& other);
-        ~Dog() override;
+        Brain();
+        Brain(const Brain& other);
+        Brain& operator=(const Brain& other);
+        ~Brain();
         
-        void makeSound() const override;
+        void set_idea(int index);
 };
