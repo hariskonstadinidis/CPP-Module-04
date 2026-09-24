@@ -6,7 +6,7 @@
 /*   By: hkonstan <hkonstan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 15:52:30 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/24 17:16:04 by hkonstan         ###   ########.fr       */
+/*   Updated: 2026/09/24 18:50:51 by hkonstan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,6 @@ int main()
     std::cout << "cat2 adress is: " << &cat2 << "\n";
     std::cout << "cat3 adress is: " << &cat3 << "\n\n";
 
-    
     Animal *anim[10];
 
     std::cout << "Cat Creation for Animal *anim:\n\n";
