@@ -6,7 +6,7 @@
 /*   By: hkonstan <hkonstan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 15:52:30 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/24 18:50:51 by hkonstan         ###   ########.fr       */
+/*   Updated: 2026/09/25 12:39:18 by hkonstan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,19 @@ int main()
 {
     Dog dog1;
     std::cout << "\n";
-    std::cout << "dog1 first ides is : " << dog1.getIdea(0) << "\n";
+    std::cout << "dog1 first idea is : " << dog1.getIdea(0) << "\n";
     dog1.set_brain(0, "A good one");
-    std::cout << "dog1 first ides is : " << dog1.getIdea(0) << "\n\n";
+    std::cout << "dog1 first idea is : " << dog1.getIdea(0) << "\n\n";
     Dog dog2(dog1);
+    dog1.set_brain(0, "A bad one");
     std::cout << "\n";
-    Dog dog3 = dog2;
+    Dog dog3 = dog1;
+    dog1.set_brain(0, "A terrible one");
     std::cout << "\n\n";    
 
-    std::cout << "dog1 first ides is : " << dog1.getIdea(0) << "\n";
-    std::cout << "dog2 first ides is : " << dog2.getIdea(0) << "\n";
-    std::cout << "dog3 first ides is : " << dog3.getIdea(0) << "\n\n";
+    std::cout << "dog1 first idea is : " << dog1.getIdea(0) << "\n";
+    std::cout << "dog2 first idea is : " << dog2.getIdea(0) << "\n";
+    std::cout << "dog3 first idea is : " << dog3.getIdea(0) << "\n\n";
     std::cout << "dog1 adress is: " << &dog1 << "\n";
     std::cout << "dog2 adress is: " << &dog2 << "\n";
     std::cout << "dog3 adress is: " << &dog3 << "\n\n";
@@ -37,11 +39,13 @@ int main()
     Cat cat1;
     std::cout << "\n";
     std::cout << "cat1 first ides is : " << cat1.getIdea(0) << "\n";
-    cat1.set_brain(0, "A bad one");
+    cat1.set_brain(0, "A good one");
     std::cout << "cat1 first ides is : " << cat1.getIdea(0) << "\n\n";
     Cat cat2(cat1);
+    cat1.set_brain(0, "A bad one");
     std::cout << "\n";
-    Cat cat3 = cat2;
+    Cat cat3 = cat1;
+    cat1.set_brain(0, "A terible one");
     std::cout << "\n\n";    
 
     std::cout << "cat1 first ides is : " << cat1.getIdea(0) << "\n";

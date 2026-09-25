@@ -1,27 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Brain.hpp                                          :+:      :+:    :+:   */
+/*   IMateriaSource.hpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hkonstan <hkonstan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/22 13:14:01 by hariskon          #+#    #+#             */
-/*   Updated: 2026/09/25 12:03:43 by hkonstan         ###   ########.fr       */
+/*   Created: 2026/09/24 20:18:17 by hkonstan          #+#    #+#             */
+/*   Updated: 2026/09/24 20:18:34 by hkonstan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
-
-class Brain{
-    private:
-        std::string ideas[100];
-    
-    public:
-        Brain();
-        Brain(const Brain& other);
-        Brain& operator=(const Brain& other);
-        ~Brain();
-        
-        void set_idea(int index, std::string idea);
-        std::string getIdea(int index);
-};
